@@ -1,6 +1,7 @@
 # Other-Useful-Functions
 Useful functions 
 
+```{r}
 #easy function returning useful statistical moments
 mymoments <- function(x){
   a <- moments::kurtosis(x)
@@ -24,3 +25,4 @@ Mode <- function(x) {
   ux <- unique(x)
   ux[which.max(tabulate(match(x, ux)))]
 }
+```
